@@ -32,5 +32,13 @@ export default defineConfig({
 				}
 			}
 		]
-	}
+	},
+  build: {
+    lib: {
+      entry: 'src/widget.js',
+      name: 'CafeHoppingWidget',
+      fileName: 'widget',
+      formats: ['iife']
+    }
+  }
 });
