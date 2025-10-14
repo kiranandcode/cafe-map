@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+<header>
+      <div class="header-container border-trans-pink width-container">
+        <div class="header-logo-container">
+          <a href="/">
+            <img class="header-img" src="/images/banner.svg" height="40" width="280"/>
+        </a>
+        </div>
+        <div class="header-motto-container">
+          <span>To Proof Maintenance & Beyond!</span>
+        </div>
+      </div>
+</header>
+<nav class="navigation">
+  <ul class="navigation-list width-container">
+      <li class="navigation-list-item">
+          <a class="link">About Me</a>
+      </li>
+      <li class="navigation-list-item">
+          <a class="link">Publications</a>
+      </li>
+      <li class="navigation-list-item navigation-list-item--current">
+          <a class="link">Cafe Guide!</a>
+      </li>
+
+      <li class="navigation-list-item">
+          <a class="link">Artwork</a>
+      </li>
+      <li class="navigation-list-item">
+          <a class="link">Posts</a>
+      </li>
+  </ul>
+</nav>
+    <div class="width-container">
+    <main class="body">
+    %sveltekit.body%
+    </main>
+    </div>
+    <footer class="footer">
+      <div class="width-container">
+        <div class="footer-block">
+          <div class="footer-block-item footer-block-item-grow mx-2.5 mb-2.5">
+            <img src="/images/public-domain.svg" height="30" width="148"/>
+            <span>All content is available under the <a class="footer-link" href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero License v1.0</a>, except where otherwise stated</span>
+          </div>
+          <div class="footer-block-item">
+            <a class="footer-logo footer-link">Abolish Copyright ©</a>
+          </div>
+        </div>
+      </div>
+</footer>
+	</body>
+</html>
