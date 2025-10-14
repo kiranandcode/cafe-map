@@ -1,5 +1,5 @@
 <script lang="ts">
-
+  export const prerender = true;
   import { AtpAgent } from '@atproto/api';
 
   import BlueskyPost  from '../components/BlueskyPost.svelte';

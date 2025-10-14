@@ -1,6 +1,6 @@
 <script lang="ts">
+  export const prerender = true;
   import { renderPost, type PostData } from 'bluesky-post-embed/core';
-
   interface Props {
     data: PostData;
   }

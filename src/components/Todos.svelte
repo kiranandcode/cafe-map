@@ -1,4 +1,5 @@
 <script lang="ts">
+  export const prerender = true;
  type Todo = {name: String, id: number, completed: Boolean};
  export let todos : Todo[] = [];
  let newTodoName : String = "";

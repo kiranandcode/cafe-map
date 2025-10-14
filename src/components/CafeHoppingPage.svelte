@@ -1,4 +1,5 @@
 <script lang="ts">
+  export const prerender = true;
   import { MapLibre, Marker, Popup } from 'svelte-maplibre';
   import { Coffee } from 'lucide-svelte';
   import Markdown from 'svelte-exmarkdown';

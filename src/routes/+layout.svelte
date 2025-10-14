@@ -1,9 +1,9 @@
 <script lang="ts">
+  export const csr = true;
+  export const ssr = false;
+  export const prerender = true;
   import '../app.css';
-  import favicon from '$lib/assets/favicon.svg';
-
-   let { children } = $props();
-      
+  let { children } = $props();
 </script>
 
 {@render children?.()}
