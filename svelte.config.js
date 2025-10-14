@@ -29,6 +29,7 @@ const config = {
       output: {
         experimentalMinChunkSize: Infinity,
         manualChunks: undefined,
+        chunkFileNames: 'widget.js'
       }
     }
   }
