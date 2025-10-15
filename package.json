@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@atproto/api": "^0.17.3",
+    "@tailwindcss/vite": "^4.1.14",
     "bluesky-post-embed": "^1.0.5",
     "lucide-svelte": "^0.545.0",
     "svelte-exmarkdown": "^5.0.2",
