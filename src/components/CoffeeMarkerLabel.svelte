@@ -1,6 +1,6 @@
 <script lang="ts">
   export const prerender = true;
-  import type {Cafe}  from "$lib/types";
+  import type {Cafe}  from "../lib/types";
   export let cafe: Cafe;
   export let onClick : (_: Cafe) => void = () => {};
 </script>

@@ -1,4 +1,4 @@
-import type { Cafe } from "$lib/types";
+import type { Cafe } from "./types";
 
 export function sortCafeList(cafes: Array<Cafe>) : Array<Cafe> {
   return [...cafes].sort(

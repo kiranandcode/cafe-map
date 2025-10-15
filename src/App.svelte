@@ -5,16 +5,13 @@
   import Markdown from 'svelte-exmarkdown';
   import AtpAgent from '@atproto/api';
   import { onMount } from 'svelte';
-  import { browser } from '$app/environment';
 
-  import PhotoGrid from './PhotoGrid.svelte';
-  import CoffeeMarkerLabel from './CoffeeMarkerLabel.svelte';
-  import CoffeeListLabel from './CafeListLabel.svelte';
-  import type {Cafe, CafeHoppingLocation} from '../lib/types';
-  import {loadCafeList} from '../lib/loader';
-  import { sortCafeList } from '../lib/utils';
-
-
+  import PhotoGrid from './components/PhotoGrid.svelte';
+  import CoffeeMarkerLabel from './components/CoffeeMarkerLabel.svelte';
+  import CoffeeListLabel from './components/CafeListLabel.svelte';
+  import type {Cafe, CafeHoppingLocation} from './lib/types';
+  import {loadCafeList} from './lib/loader';
+  import { sortCafeList } from './lib/utils';
 
   let agent: AtpAgent;
 
@@ -34,7 +31,6 @@
   }
 
   onMount(() => {
-    if(!browser) return;
     agent = new AtpAgent({service: 'https://bsky.social' });
   });
 
@@ -117,11 +113,11 @@ Have a look around, I hope you enjoy your stay!
     <span class="tag">
       <button class="block link" on:click|preventDefault={viewCafe(currentlySelectedCafe)}>View ></button>
     </span>
-  {#if currentlySelectedCafe.mapsLink}
-    <span class="tag">
-      <a class="link" href={currentlySelectedCafe.mapsLink}>GMaps ></a>
-    </span>
-  {/if}
+  <!-- {#if currentlySelectedCafe.mapsLink} -->
+  <!--   <span class="tag"> -->
+  <!--     <a class="link" href={currentlySelectedCafe.mapsLink}>GMaps ></a> -->
+  <!--   </span> -->
+  <!-- {/if} -->
   <div class="grid-row">
     <div class="grid-column-full">
       <div class="body">

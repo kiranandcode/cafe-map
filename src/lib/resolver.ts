@@ -1,4 +1,3 @@
-import { browser } from '$app/environment';
 import type { AtpAgent } from '@atproto/api';
 import { fetchPost, type PostData } from 'bluesky-post-embed/core';
 import { onMount } from 'svelte';

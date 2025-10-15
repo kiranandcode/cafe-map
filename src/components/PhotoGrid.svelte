@@ -2,10 +2,9 @@
   export const prerender = true;
   import { AtpAgent } from '@atproto/api';
 
-  import BlueskyPost  from '../components/BlueskyPost.svelte';
-  import {bskyUrlToPostData} from "$lib/resolver";
-	import { onMount } from 'svelte';
-	import { browser } from '$app/environment';
+  import BlueskyPost  from './BlueskyPost.svelte';
+  import {bskyUrlToPostData} from "../lib/resolver";
+  import { onMount } from 'svelte';
 
   export let agent : AtpAgent;
 

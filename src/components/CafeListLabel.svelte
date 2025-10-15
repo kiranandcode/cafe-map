@@ -1,7 +1,7 @@
 <script lang="ts">
   export const prerender = true;
-  import type { Cafe } from "$lib/types";
-	import type { Attachment } from "svelte/attachments";
+  import type { Cafe } from "../lib/types";
+  import type { Attachment } from "svelte/attachments";
   export let cafe: Cafe;
   export let onClick: (_: Cafe) => void = () => {};
   export let isActive: boolean = false;

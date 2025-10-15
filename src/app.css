@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
+/* @plugin '@tailwindcss/forms'; */
+/* @plugin '@tailwindcss/typography'; */
 
 @font-face {
   font-family: PublicSans;
@@ -3552,5 +3552,4 @@ footer {
   gap: 12px;
   padding: 12px 16px 0;
 }
-
 

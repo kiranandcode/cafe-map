@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 <header>
@@ -40,7 +39,8 @@
 </nav>
     <div class="width-container">
     <main class="body">
-    %sveltekit.body%
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
     </main>
     </div>
     <footer class="footer">
